@@ -1,0 +1,15 @@
+This is a simple client / server program I made for my systems class 3423 , UTSA , Maynard. 
+
+It uses named pipes.
+
+I have makefiles so you can just use those to compile programs.
+you will need to compile server.c and client.c
+
+
+just run the server executable
+execute the client program as so.  $ client <command>    // ie   client ls  or  $ client cat
+
+before running these programs the fifos will need to be created. I used /tmp/disp and /tmp/rfifo
+
+use mkfifo command to make these fifos or program will not work.  ( you will get an exec error)
+
