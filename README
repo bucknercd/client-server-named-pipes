@@ -6,10 +6,16 @@ I have makefiles so you can just use those to compile programs.
 you will need to compile server.c and client.c
 
 
-just run the server executable
+just run the server executable first.
+
 execute the client program as so.  $ client <command>    // ie   client ls  or  $ client cat
 
 before running these programs the fifos will need to be created. I used /tmp/disp and /tmp/rfifo
 
 use mkfifo command to make these fifos or program will not work.  ( you will get an exec error)
+
+***update: the creation of the fifos will now be automatic using the makefile cmd in the server dir
+   $ make fifo
+
+
 
